@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+
+.btn {
+   @apply font-bold py-2 px-4 rounded;
+}
+
+.btn-blue {
+   @apply bg-blue-500 text-white;
+}
+
+.btn-blue:hover {
+   @apply bg-blue-700;
+}
+
+.card {
+   @apply max-w-sm rounded overflow-hidden shadow-lg;
+}
+
+.card img {
+   @apply w-full;
+}
+
+.card .section {
+   @apply px-6 py-4;
+
+}
+
+.card .title {
+   @apply font-bold text-xl mb-2;
+}
+
+.card .body {
+   @apply text-gray-700 text-base;
+}
+
+.card .tags {
+   @apply px-6 py-4;
+}
+
+.card .tags .tag {
+   @apply inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2;
+}
+
+.card .tag:last-child {
+   @apply mr-0;
+}
+
+.nav {
+   @apply flex items-center justify-between flex-wrap p-6 max-w-5xl m-auto;
+}
+
+.nav a {
+   @apply block inline-block mt-0 mr-4 font-semibold;
+}
+
+@tailwind utilities;
+
+body {
+   @apply bg-white;
+}
+
+main {
+   @apply relative p-8 m-auto max-w-5xl;
+}
+
+p {
+   @apply mb-4;
+}
+
+h1 {
+   @apply text-4xl font-semibold mb-6;
+}
+
+a {
+   @apply text-blue-500;
+}
+
+a.selected {
+   @apply text-blue-800;
+}
+
+a:hover {
+   @apply text-blue-800;
+}
